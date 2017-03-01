@@ -29,7 +29,8 @@ def sanitized_words(sentence):
 
 
 def get_matched_context_words(sentence):
-    return [word for word in sanitized_words(sentence) if stem(word).lower() in get_stemmed_context_words()]
+    stemmed_context_words = get_stemmed_context_words()
+    return [word for word in sanitized_words(sentence) if stem(word).lower() in stemmed_context_words]
 
 
 def get_sentiment_polarity(sentence):
