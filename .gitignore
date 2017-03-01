@@ -1,0 +1,4 @@
+*.pyc
+.editorconfig
+.idea/
+.DS_Store
